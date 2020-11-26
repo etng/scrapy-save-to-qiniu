@@ -17,6 +17,9 @@ QINIU_SK = ''
 QINIU_BUCKET = ''
 QINIU_DOMAIN = ''
 QINIU_DEL_SRC = True
+QINIU_POLICY = {
+
+}
 QINIU_FIELDS = [
     'pdf_url',
 ]
