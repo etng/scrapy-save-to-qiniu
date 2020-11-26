@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+from setuptools import setup
+
+setup(
+    name='scrapy-save-to-qiniu',
+    version='0.2.0',
+    url='https://github.com/etng/scrapy-save-to-qiniu',
+    description='Pipeline to save scrapy item field attachment to qiniu',
+    long_description=open('README.md').read() + "\n\n" + open("CHANGES.md").read(),
+    long_description_content_type='text/markdown',
+    author='etng',
+    maintainer='etng',
+    maintainer_email='etng2004@gmail.com',
+    license='BSD',
+    packages=['scrapy_save_to_qiniu'],
+    zip_safe=False,
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'License :: OSI Approved :: BSD License',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Framework :: Scrapy',
+        'Intended Audience :: Developers',
+        'Operating System :: OS Independent',
+        'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Software Development :: Libraries :: Application Frameworks',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+    ],
+    requires=['scrapy', 'selenium', 'requests'],
+)
